@@ -1,0 +1,19 @@
+.motivator {
+    width: 177px;
+    height: 30px;
+    padding: 4px 4px 5px 16px;
+    border-radius: 3px 0 0 3px;
+    gap: 10px;
+    background: #FF7647;
+    display: flex;
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+}
+
+.motivatorBlock {
+    display: flex;
+}

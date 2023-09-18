@@ -1,0 +1,104 @@
+.roomCardBlock {
+    width: 372px;
+    height: 372px;
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+.roomCardBlock + .roomCardBlock {
+    margin-left: 20px;
+}
+
+.separationLine {
+    border-color: rgba(255, 255, 255, 0.2);
+    width: 323px;
+    margin-left: 24px;
+}
+
+.roomCardContent {
+    position: absolute;
+}
+
+.motivatorContainer {
+    margin-left: 24px;
+    margin-bottom: 110px;
+}
+
+
+.gradientOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(10, 34, 64, 0.1) 0%, #0A2240 100%);
+    pointer-events: none;
+}
+
+.gradientOverlayReserved {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(234, 234, 234, 0.2) 0%, #2D507C 100%);
+    pointer-events: none;
+}
+
+@media screen and (min-width: 1279px) {
+    .roomCardBlock:nth-child(3n+1) {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .roomCardBlock {
+        width: 336px;
+        height: 420px;
+    }
+    .separationLine {
+        width: 288px;
+    }
+    .motivatorContainer {
+        margin-bottom: 45px;
+    }
+    .roomCardImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .roomCardBlock:nth-child(2n+1) {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .roomCardBlock {
+        width: 288px;
+        height: 347px;
+    }
+    .separationLine {
+        width: 246px;
+    }
+    .motivatorContainer {
+        margin-bottom: 30px;
+    }
+    .roomCardImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .roomCardBlock:nth-child(2n+1) {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .roomCardBlock + .roomCardBlock {
+        margin-left: 0;
+    }
+}

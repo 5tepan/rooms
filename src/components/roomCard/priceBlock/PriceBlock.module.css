@@ -1,0 +1,92 @@
+.priceInfoBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 372px;
+    height: 96px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.priceTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.priceBlock {
+    display: flex;
+    align-items: center;
+}
+
+.fromPrice {
+    font-family: Roboto, sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-right: 5px;
+}
+
+.currency {
+    font-family: Roboto, sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #999999;
+    margin-left: 4px;
+}
+
+.priceFor {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #FF4B77;
+}
+
+@media screen and (max-width: 1279px) {
+    .priceInfoBlock {
+        width: 336px;
+        height: 161px;
+        justify-content: flex-end;
+        align-items: unset;
+        flex-direction: column;
+        padding-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .priceInfoBlock {
+        width: 288px;
+        height: 149px;
+        flex-direction: column;
+    }
+    .priceFor {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .fromPrice {
+        font-size: 17px;
+    }
+    .price {
+        font-size: 20px;
+    }
+    .currency {
+        font-size: 20px;
+    }
+}

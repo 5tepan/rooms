@@ -1,0 +1,45 @@
+.reservedBlock {
+    width: 372px;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #3C3E43;
+}
+
+.reserved {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.toPayment {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+span.toPayment::after {
+    content: "оплате";
+    color: #FF4B77;
+}
+
+@media screen and (max-width: 1279px) {
+    .reservedBlock {
+        width: 336px;
+        height: 96px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .reservedBlock {
+        width: 288px;
+        height: 96px;
+    }
+}

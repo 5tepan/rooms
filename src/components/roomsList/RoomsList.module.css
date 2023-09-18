@@ -1,0 +1,40 @@
+.title {
+    font-family: Roboto, sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 55px;
+    text-align: center;
+}
+
+.roomsListBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.roomsPosition {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1279px) {
+    .roomsListBlock {
+        width: 1280px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .roomsListBlock {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .roomsListBlock {
+        width: 500px;
+    }
+}
